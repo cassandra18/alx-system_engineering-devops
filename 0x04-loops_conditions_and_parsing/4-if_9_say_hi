@@ -11,5 +11,5 @@ do
 	else
 		echo "BestSchool"
 	fi
-	((i++))
+	i=$((i + 1))
 done
