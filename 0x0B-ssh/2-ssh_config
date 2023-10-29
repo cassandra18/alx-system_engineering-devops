@@ -1,0 +1,4 @@
+# Connect to server from my machine without password
+
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
