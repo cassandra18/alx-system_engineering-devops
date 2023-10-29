@@ -3,12 +3,6 @@
 
 DevOpsSSHNetworkSysAdminSecurity
 
--   By: Sylvain Kalache
--   Weight: 1
--   Project will start Oct 27, 2023 6:00 AM, must end by Oct 30, 2023 6:00 AM
--   Checker was released at Oct 28, 2023 12:00 AM
--   An auto review will be launched at the deadline
-
 Background Context
 ------------------
 
