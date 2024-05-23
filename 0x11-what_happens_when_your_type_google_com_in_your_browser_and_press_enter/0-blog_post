@@ -1,0 +1,59 @@
+Ever wondered how you get what you are searching for when you enter a url in the search bar in Google?
+
+
+It might seem like magic but it's actually a well-coordinated team effort!
+
+Lets break down the journey from your computer screen to google’s servers when you enter - https://google.com - in your search bar.
+
+
+DNS Lookup: Finding the Address
+When you type in google’s url in the search bar, the computer does not understand that human language, hence it translates the url into an IP address,8.8.8.8. The DNS is responsible for the conversion of the url into an IP address. 
+
+
+TCP/IP: The Information Highway
+Transmission Control Protocol, (TCP), acts like the mail carrier. They break down your request into small packets and ensure that they arrive at their destination (google servers) in the right order.
+
+
+Internet Protocol, (IP), acts like the addresses on the envelope, directing each packet on the correct destination/server.
+
+
+Firewall: Security Checkpoint
+
+
+Firewall acts like a security guard on google servers. It checks incoming and outgoing requests. It protects the server against malicious software attacks.
+
+
+HTTPS/SSL: Encryption Tunnel
+
+Hypertext Transfer Protocol Secure (HTTPS) uses Secure Socket Layer (SSL) or its successor, Transport Layer Security (TLS) to encrypt the request.This scrambles the data being exchanged, making it unreadable for anyone who’s trying to access it.
+When you see the padlock next to the url, it signifies a secure connection.
+
+
+Load Balancer: Distributing the Workload
+
+When there are over a million requests to google servers at once, one server will be overwhelmed. Therefore, load balancers act like traffic police, distributing the traffic/requests, across multiple servers ensuring smooth operation.
+
+
+Web Server: Serving Up the Content
+
+The request finally reaches a web server, the computer that contains the files such as HTML, CSS and JavaScript. It understands the request and retrieves these files that make up the google search page.
+
+
+Application Server (Optional): Dynamic Content
+
+Application servers are used to serve dynamic content. They interact with the database and use programming languages to personalize your search.
+
+
+Database (Optional): Powering the Search
+
+A database stores indexed web pages and information, allowing the application server to retrieve the necessary information based on the user search.
+
+
+The Journey Back: Delivering the Page
+
+Once the web server and potentially the application server gathers the necessary information, it sends it back to your computer. Your browser interprets these files and displays the familiar google search page
+
+
+
+
+So, the next time you type any url and hit enter, remember the complex dance happening behind the scenes – a testament to the intricate infrastructure that powers the internet!
