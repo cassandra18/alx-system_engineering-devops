@@ -12,8 +12,8 @@ fi
 USERNAME=$1
 
 # Run the 'whoami' command as the specified user
-if sudo -u "$USERNAME" whoami; then
-	echo "Command executed successfully"
+if OUTPUT=$(sudo -i -u "$USERNAME" whoami); then
+	echo "$OUTPUT"
 else
 	echo "Failed to execute command as user $USERNAME."
 fi
