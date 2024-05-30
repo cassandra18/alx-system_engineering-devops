@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# A bash scriot that accepts one argument
+# The script should run the 'whoami' command
+# under the user pased as argument
+
+# Check if only one user is provided
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 <Username>"
+	exit 1
+fi
+
+USERNAME=$1
+
+# Run the 'whoami' command as the specified user
+if sudo -u "$USERNAME" whoami; then
+	echo "Command executed successfully"
+else
+	echo "Failed to execute command as user $USERNAME."
+fi
