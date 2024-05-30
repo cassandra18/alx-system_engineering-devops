@@ -35,7 +35,7 @@ chown -R nginx:nginx /var/lib/nginx
 service nginx restart
 
 # Check if nginx is running as nginx user
-if pgrep -f '[n]ginx: worker process' > /dev/null; then
+if pgrep -u nginx nginx > /dev/null; then
 	echo "Nginx is running as nginx user on port 8080."
 else
 	echo "Failed to start Nginx as nginx user."
