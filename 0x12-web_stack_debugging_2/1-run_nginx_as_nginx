@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# This script configures this container to:
+# 1. Run Nginx as nginx user
+# 2. nginx must be listening on all active IPS on port 8080
+
+# update nginx configuration to run as nginx user and listen on port 8080
+NGINX_CONF="/etc/nginx/nginx.conf"
+
+# Check if the configuration file exists
+if [ ! -f "$NGINX_CONF" ]; then
+	echo "Nginx configuration file not found!"
+	exit 1
+fi
+
+# Update the user directive to nginx
+sed -i 's/^user .*/user nginx;/' "if ps aux | grep '[n]ginx: worker process' | grep -q nginx; then
+   ^-- SC2009: Consider using pgrep instead of grepping ps output.
+
+For more information:$NGINX_CONF"
+
+# Update the listen directive to port 8080
+sed -i 's/listen 80;/listen 8080;/' /etc/nginx/sites-available/default
+
+# Ensure that nginx user exists
+if ! id -u nginx > /dev/null 2>&1; then
+	echo "Creating nginx user..."
+	useradd -r nginx
+fi
+
+# Ensure proper ownership and permissions
+chown -R nginx:nginx /var/log/nginx
+chown -R nginx:nginx /var/lib/nginx
+
+# Restart nginx to apply the changes
+service nginx restart
+
+# Check if nginx is running as nginx user
+if pgrep -f '[n]ginx: worker process' > /dev/null; then
+	echo "Nginx is running as nginx user on port 8080."
+else
+	echo "Failed to start Nginx as nginx user."
+	exit 1
+fi
