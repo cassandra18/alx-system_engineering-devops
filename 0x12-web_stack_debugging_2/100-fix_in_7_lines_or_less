@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# This script configures this container to:
-# 1. Run Nginx as nginx user
-# 2. nginx must be listening on all active IPS on port 8080
+# runs nginx as nginx and listens on port 8080
 chmod 644 /etc/nginx/nginx.conf
 sed -Ei 's/\s*#?\s*user .*/user nginx;/' /etc/nginx/nginx.conf
 sed -Ei 's/(listen (\[::\]:)?80) /\180 /' /etc/nginx/sites-enabled/default
