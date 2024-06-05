@@ -8,10 +8,12 @@ import sys
 
 
 if __name__ == "__main__":
-    todos_api_response = requests.get('https://jsonplaceholder.typicode.com/todos/')
+    todos_api_response = requests.get(
+        'https://jsonplaceholder.typicode.com/todos/')
     todos_list = todos_api_response.json()
 
-    users_api_response = requests.get('https://jsonplaceholder.typicode.com/users')
+    users_api_response = requests.get(
+        'https://jsonplaceholder.typicode.com/users')
     users_list = users_api_response.json()
 
     for user in users_list:

@@ -8,7 +8,8 @@ import requests
 
 
 if __name__ == "__main__":
-    response_tasks = requests.get('https://jsonplaceholder.typicode.com/todos/')
+    response_tasks = requests.get(
+        'https://jsonplaceholder.typicode.com/todos/')
     tasks_list = response_tasks.json()
 
     response_users = requests.get('https://jsonplaceholder.typicode.com/users')

@@ -10,11 +10,12 @@ import sys
 
 if __name__ == "__main__":
     api_response_todos = requests.get(
-            'https://jsonplaceholder.typicode.com/todos/')
+        'https://jsonplaceholder.typicode.com/todos/')
     todos_list = api_response_todos.json()
 
     user_details = []
-    api_response_users = requests.get('https://jsonplaceholder.typicode.com/users')
+    api_response_users = requests.get(
+        'https://jsonplaceholder.typicode.com/users')
     users_list = api_response_users.json()
 
     for user in users_list:
