@@ -5,17 +5,9 @@ alx-system_engineering-devops
 
     a. Command to list files or directories:
 
-    bash
-
-    Copy code
-
     `ls`
 
     b. Command to go back home:
-
-    bash
-
-    Copy code
 
     `cd ~`
 
