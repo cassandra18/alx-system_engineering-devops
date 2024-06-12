@@ -1,5 +1,4 @@
 # alx-system_engineering-devops
-
 1. ### Introduction to basic shell commands, E.g
 
   i. command to list files or directories
