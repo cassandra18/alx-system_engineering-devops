@@ -3,12 +3,11 @@
 ## Introduction to basic shell commands, eg,
 
   1. command to list files or directories
+     ```
+       ls
+     ```
 
-    ```
-      ls
-    ```
-
-  2. command to go back home
+  3. command to go back home
 
      ```
        cd ~
