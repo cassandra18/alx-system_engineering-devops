@@ -15,7 +15,7 @@ alx-system_engineering-devops
 
     a.  Command that prints the username of the current user:
 
-        `whoami`
+       `whoami`
 
     b.  Script that creates an empty file called `hello`:
 
