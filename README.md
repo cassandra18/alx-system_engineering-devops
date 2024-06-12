@@ -1,12 +1,10 @@
 # alx-system_engineering-devops
 1. ### Introduction to basic shell commands, E.g
-
-  i. command to list files or directories
+  1. command to list files or directories
      ```
        ls
      ```
-
-  ii. command to go back home
+  2. command to go back home
 
      ```
        cd ~
