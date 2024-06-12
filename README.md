@@ -1,6 +1,6 @@
 # alx-system_engineering-devops
 
-## Introduction to basic shell commands, eg,
+## Introduction to basic shell commands, E.g
 
   1. command to list files or directories
      ```
