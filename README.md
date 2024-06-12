@@ -19,5 +19,7 @@ alx-system_engineering-devops
 
     b.  Script that creates an empty file called `hello`:
 
-   ` #!/usr/bin/bash
-    touch hello`
+     ```
+        #!/usr/bin/bash
+        touch hello
+     ```
